@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+#rock {
+  background: #ff7e5f;
+  color: white;
+  padding: 25px 40px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#rock:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#Paper {
+  background: #feb47b;
+  color: white;
+  padding: 25px 40px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#Paper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#Scissors {
+  background: #86a8ef;
+  color: white;
+  padding: 25px 40px;
+  font-size: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#Scissors:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.score-board p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+#player-score,
+#computer-score {
+  color: #4a90e2;
+}
+
+#reset {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+#reset:hover {
+  background: #5a6fd8;
+}
+
+.result {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  min-height: 50px;
+}
+
+.rules {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.rules h3 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .choice {
+    flex: 1 1 80px;
+    min-width: 80px;
+  }
+
+  .choice img {
+    width: 50px;
+    height: 50px;
+  }
+}
